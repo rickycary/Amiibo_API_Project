@@ -1,6 +1,6 @@
 # The Name of My App
 
-A description of my project
+A description of my project 
 
 ### Technologies Used
 
