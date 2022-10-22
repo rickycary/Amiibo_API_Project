@@ -19,8 +19,8 @@ ___
 ### Daily Plan
 | Day | Goal|
 |-----|-----|
-| 1 | Chose Api |
-| 2 | Get Approval |
+| 1 | Choose Api |
+| 2 | Finish Wirefram and Get Approval |
 | 3 | Render Data to the screen|
 | 4 | Create Form |
 | 5 | Style Page |
