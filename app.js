@@ -1,11 +1,31 @@
-const getPokemon = () => {
-    $.ajax("https://pokeapi.co/api/v2/pokemon/ditto")
-    .then((data) => {
-        console.log(data)
+// https://amiiboapi.com/
+
+const baseURL = 'https://www.amiiboapi.com/api/'
+
+
+// Function that does the Pokedex search
+function getAmiibo(name){
+    const url = `${baseURL}amiibo/`
+
+// Make our request
+    $.ajax(url).then((amiibo) => {
+        console.log(amiibo)
+
+// Render the data
+        // const $main = $('main')
+        // $main.empty()
+
+        // $main.html(`
+        // <h1>${m.results.name}`)
     })
+
 }
 
-getPokemon()
+
+
+
+
+getAmiibo()
 
 
 
