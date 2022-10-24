@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+body > img {
+    width: 1000px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+body > button { 
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    transition: background-color .3s, color .3s;
+}
+
+body > button:hover {
+    background-color: black;
+    color: red
+}
+
+.amiiboContainer {
+    width: 60%;
+    background-color: aquamarine;
+    border: 3px solid green;
+    margin: auto
+}
+
+.amiiboContainer .square {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+}
