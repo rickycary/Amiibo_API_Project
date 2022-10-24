@@ -1,31 +1,44 @@
 // https://amiiboapi.com/
 
-const baseURL = 'https://www.amiiboapi.com/api/'
+const baseURL = 'https://www.amiiboapi.com/api'
 
 
 // Function that does the Pokedex search
-function getAmiibo(name){
-    const url = `${baseURL}amiibo/`
+function getAmiibo(title){
+    const url = $.ajax(`${baseURL}/amiibo/?name=${title}`)
 
 // Make our request
-    $.ajax(url).then((amiibo) => {
+    .then((amiibo) => {
         console.log(amiibo)
 
-// Render the data
-        // const $main = $('main')
-        // $main.empty()
+        const $main = $('main')
+        $main.empty()
 
-        // $main.html(`
-        // <h1>${m.results.name}`)
+        $main.html(`
+        <h1>Character Name: ${amiibo.amiibo[0].name}</h1>
+        <img src="${amiibo.amiibo[0].image}">
+        <h1>Character Name: ${amiibo.amiibo[0].gameSeries}</h1>
+        <h1>Character Name: ${amiibo.amiibo[0].amiiboSeries}</h1>
+        <h1>Character Name: ${amiibo.amiibo[0].release.na}</h1>
+
+
+
+        `)
     })
-
 }
 
+// Put a click event on the submit button
+$("input[type=submit]").on("click", (event) => {
+
+    event.preventDefault() // Prevents refresh
+
+    const inputText = $("input=[type=text]").val()
+    
+    getAmiibo(inputText)
+})
 
 
-
-
-getAmiibo()
+getAmiibo('Mario')
 
 
 
