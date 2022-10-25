@@ -26,6 +26,19 @@ function getAmiibo(title){
 }
 //====================================================================
 
+// Put a click event on the submit button
+$("input[type=submit]").on("click", event => {
+
+    event.preventDefault()
+
+    const inputText = $("input[type=text]").val()
+
+    getAmiibo(inputText)
+})
+
+
+getAmiibo('link')
+
 
 
 //====================================================================
@@ -43,25 +56,16 @@ const getRandomAmiibo = (random) => {
 .then((data) => {
     // console.log(data)
     console.log(data.amiibo[0].character)
-    addSquare(data.amiibo[0].character)
-    addSquare(data.amiibo[99].character)
-
+    addSquare(amiibo[0].name)
 })
 }
+
+getRandomAmiibo()
+const button = document.querySelector("button")
+button.addEventListener("click", getRandomAmiibo)
+
 //====================================================================
 
-// Put a click event on the submit button
-$("input[type=submit]").on("click", event => {
-
-    event.preventDefault()
-
-    const inputText = $("input[type=text]").val()
-
-    getAmiibo(inputText)
-})
-
-
-getAmiibo('link')
 
 
 
