@@ -1,3 +1,5 @@
+const baseURL = 'https://amiiboapi.com/'
+
 const addSquare = (randomAmiibo) => {
     const square = document.createElement('div')
     square.classList.add('square')
@@ -6,10 +8,10 @@ const addSquare = (randomAmiibo) => {
     container.append(square)
 }
 
-const getRandomAmiibo = () => {
-    $.ajax("https://www.amiiboapi.com/api/amiibo/")
+const getRandomAmiibo = (random) => {
+    $.ajax(`${baseURL}/api/amiibo/`)
 .then((data) => {
-    console.log(data)
+    // console.log(data)
     console.log(data.amiibo[0].character)
     addSquare(data.amiibo[0].character)
     addSquare(data.amiibo[99].character)

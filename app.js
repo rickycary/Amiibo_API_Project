@@ -19,7 +19,6 @@ function getAmiibo(title){
         <img src="${amiibo.amiibo[0].image}">
         <h1>Character Name: ${amiibo.amiibo[0].gameSeries}</h1>
         <h1>Character Name: ${amiibo.amiibo[0].amiiboSeries}</h1>
-        <h1>Character Name: ${amiibo.amiibo[0].release.na}</h1>
 
 
 
@@ -28,17 +27,17 @@ function getAmiibo(title){
 }
 
 // Put a click event on the submit button
-$("input[type=submit]").on("click", (event) => {
+$("input[type=submit]").on("click", event => {
 
-    event.preventDefault() // Prevents refresh
+    event.preventDefault()
 
-    const inputText = $("input=[type=text]").val()
-    
+    const inputText = $("input[type=text]").val()
+
     getAmiibo(inputText)
 })
 
 
-getAmiibo('Mario')
+getAmiibo('link')
 
 
 
