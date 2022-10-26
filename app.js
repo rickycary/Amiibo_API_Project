@@ -22,7 +22,7 @@ function getAmiibo(title){
 // Information to translate to the page from the API
         $main.html(`
         <h1>Character Name: ${amiibo.amiibo[0].name}</h1>
-        <img src="${amiibo.amiibo[0].image}">
+        <img class="amiiboPic"src="${amiibo.amiibo[0].image}">
         <h3>Game Series: ${amiibo.amiibo[0].gameSeries}</h3>
         <h3>Amiibo Series: ${amiibo.amiibo[0].amiiboSeries}</h3>
         `)

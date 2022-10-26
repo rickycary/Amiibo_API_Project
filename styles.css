@@ -3,10 +3,29 @@
 h1 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    background-color: #FF4554;
+}
+
+.title, h3, h1, p{
+    background-color: #FF4554;
+}
+
+p {
+    
 }
 
 body {
     text-align: center;
+    background-color: #00C3E3;
+    ;
+}
+
+header {
+    background-color: pink;
+}
+
+footer {
+    background-color: aquamarine;
 }
 
 body > img {
@@ -19,6 +38,8 @@ body > img {
 .amiiboLogo {
     width: 25%;
 }
+
+
 
 
 
