@@ -6,12 +6,8 @@ h1 {
     background-color: #FF4554;
 }
 
-.title, h3, h1, p{
+.title, .search, h3, h1, p{
     background-color: #FF4554;
-}
-
-p {
-    
 }
 
 body {
@@ -34,10 +30,17 @@ body > img {
     margin: auto;
 }
 
-
+div {
+    background-color: white;
+}
 .amiiboLogo {
     width: 25%;
 }
+
+.allAmiibos {
+    width: 75%;
+}
+
 
 
 

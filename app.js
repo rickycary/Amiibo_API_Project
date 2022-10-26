@@ -11,6 +11,10 @@ const baseURL = 'https://www.amiiboapi.com/api'
 function getAmiibo(title){
 // Used baseURL and inserted ${title} for character
     const url = $.ajax(`${baseURL}/amiibo/?name=${title}`)
+    // Creates array of all iterations of character
+    // const url = $.ajax(`${baseURL}/amiibo/?name=${title}`)
+
+
 
 // Makes our request 
     .then((amiibo) => {
@@ -18,6 +22,10 @@ function getAmiibo(title){
 
         const $main = $('main')
         $main.empty()
+
+
+  // For loop here 
+
 
 // Information to translate to the page from the API
         $main.html(`
@@ -29,6 +37,8 @@ function getAmiibo(title){
     })
 }
 //====================================================================
+
+
 
 
 // Put a click event on the submit button
