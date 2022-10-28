@@ -1,6 +1,6 @@
 # Amiibo Index
 
-A personal Pokedex used for finding different Amiibos that Nintendo has come out with over the years. The app will show you 
+A personal Pokedex used for finding different Amiibos that Nintendo has come out with over the years. The app will show you specific characters that you search for and what Game and Amiibo series that they are from.  
 ___
 ### Technologies Used 
 - HTML 
@@ -37,3 +37,6 @@ ___
 [My Project Live Page](https://rickycary.github.io/project1/)
 
 ___ 
+### Goals to complete in the future
+- Have the app display every variant when searching for a specific character. 
+- A save feature to save amiibos that you already own or want in the future. 
