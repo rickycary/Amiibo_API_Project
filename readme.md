@@ -34,7 +34,7 @@ _____
 
 ___
 ### Link to my project
-[My Project Live Page](https://rickycary.github.io/project1/)
+[My Project Live Page](https://rickycary.github.io/Amiibo_API_Project/)
 
 ___ 
 ### Goals to complete in the future
